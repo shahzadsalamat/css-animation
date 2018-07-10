@@ -1,0 +1,94 @@
+@keyframes fillup {
+  to {
+    stroke-dasharray: 200 200;
+  }
+}
+h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+}
+
+p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #999;
+}
+
+a#reset {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  display: block;
+}
+
+button {
+  display: block;
+  position: relative;
+  margin: 100px auto;
+  background: transparent;
+  border: solid 2px #19cc95;
+  border-radius: 100px;
+  color: #19cc95;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  transition: background 0.5s ease, color 0.5s ease, width 0.5s ease, padding 0.5s ease;
+  outline: none;
+  height: 50px;
+  width: 180px;
+}
+button:hover {
+  background: #19cc95;
+  color: #FFF;
+  cursor: pointer;
+}
+button.clicked {
+  padding: 0;
+  width: 50px;
+  background: #FFF;
+  border-width: 4px;
+  border-color: #CCC;
+  background: conic-gradient(#655 40%, yellowgreen 0);
+}
+button.clicked span.text {
+  display: none;
+}
+button.clicked .spinner {
+  display: block;
+}
+button.clicked .spinner circle {
+  animation: fillup 2s cubic-bezier(1, 0.04, 0.41, 0.76) 0.5s;
+  animation-fill-mode: forwards;
+}
+button.submited {
+  background-color: #19cc95;
+  width: 180px;
+  border-width: 2px;
+  border-color: #19cc95;
+}
+button.submited .spinner {
+  display: none;
+}
+button.submited .icon {
+  font-size: 25px;
+}
+button .spinner {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  display: none;
+}
+button .spinner svg {
+  transform: rotate(-90deg);
+}
+button .spinner circle {
+  fill: transparent;
+  stroke: #19cc95;
+  stroke-width: 4;
+  stroke-dasharray: 0 200;
+}
+button .icon {
+  font-size: 0;
+  color: #FFF;
+  transition: all 0.5s ease;
+}
