@@ -1,11 +1,6 @@
    * {
   box-sizing: border-box;
 }
-
-body {
-  background: #8818B9;
-}
-
 .search {
   width: 100px;
   height: 100px;
