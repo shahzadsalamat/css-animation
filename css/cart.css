@@ -1,0 +1,105 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+  padding: 12px;
+  border-radius: 4px;
+  height: 48px;
+  border: none;
+}
+
+.btn {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  margin: 32px auto;
+  min-width: 192px;
+  text-align: left;
+  background-color: #FD8D00;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+}
+
+.btn__swiper {
+  position: absolute;
+  top: 0;
+  left: -202px;
+  fill:#157723;
+}
+
+.btn__icon {
+  font-size: 14px;
+  color: #FAFAFA;
+  margin-right: 12px;
+  position: relative;
+}
+.btn__icon .fa {
+  text-align: center;
+  width: 24px;
+}
+
+.btn__label {
+  color: #FAFAFA;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.btn:hover .btn__swiper {
+  transform: translateX(56px);
+}
+.btn:hover .btn__label {
+  transform: translateX(12px);
+}
+.btn:hover .btn__icon {
+  color:#23C54F;
+}
+
+.btn__swiper {
+  transition: transform 100ms ease;
+}
+
+.btn__icon {
+  transition: colour 100ms 50ms ease;
+}
+
+.btn__icon .fa {
+  transition: transform 4000ms ease;
+}
+
+.btn__label {
+  transition: transform 100ms ease, colour 100ms ease;
+}
+
+.btn.loading .btn__swiper,
+.btn.loaded .btn__swiper {
+  transform: translateX(202px);
+}
+.btn.loading .btn__label,
+.btn.loading .btn__icon,
+.btn.loaded .btn__label,
+.btn.loaded .btn__icon {
+  color: #fff;
+}
+.btn.loading .btn__label,
+.btn.loaded .btn__label {
+  transform: translateX(0px);
+}
+
+.btn.loading .fa {
+  animation: jelly 1000ms alternate both;
+}
+.btn.loading .fa:before {
+  content: "\f110";
+}
+
+.btn.loaded .fa {
+  animation: jelly 1000ms linear both;
+}
+.btn.loaded .fa:before {
+  content: "\f00c";
+}
+
