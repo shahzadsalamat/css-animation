@@ -11,10 +11,8 @@
         <link rel="stylesheet" href="css/cart.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/submit.css">
-        
-   <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
-
+        <link rel="stylesheet" href="css/input.css">
+        <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
 
@@ -30,7 +28,7 @@
   </div>
   
   
-  <div class="section-two">
+  <div class="">
     <div class="flex">
       <div class="share">
         <a href="#0" class="toggle"><span>SHARE</span></a>
@@ -48,67 +46,59 @@
           </div>
         </div>
       </div>
-</div>
+   </div>
 </div>
 
   <div class="section-one">
-  <button class="btn btn--add-to-cart">
-  <svg class="btn__swiper" width="202" height="48px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <path d="M 0 0
-             L 202 0
-             L 192 48
-             L 0 48"
-          stroke="none">
-    </path>
-  </svg>
-  <span class="btn__icon">
-    <i class="fa fa-shopping-cart fa-fw"></i>
-  </span>
-
-  <span class="btn__label">
-  Add to cart
-  </span>
-  
-</button>
-  </div>
+ 	 <button class="btn btn--add-to-cart">
+ 		 <svg class="btn__swiper" width="202" height="48px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  			  <path d="M 0 0
+				 L 202 0
+				 L 192 48
+				 L 0 48"
+			  	stroke="none">
+   			 </path>
+ 		 </svg>
+      <span class="btn__icon">
+        <i class="fa fa-shopping-cart fa-fw"></i>
+      </span>
+  	 <span class="btn__label">
+      Add to cart
+     </span>
+   </button>
+ </div>
   
   
-  <div class="section-two">
-  <button id="submit">
-  <span class="icon"><i class="fa fa-check fa-fw"></i></span>
-  <span class="text">Submit</span>
-  <span class="spinner">
-    <svg width="50" height="50">
-      <circle r="23" cx="25" cy="25" />
-    </svg>
-  </span>
-</button>
-<a id="reset" href="#">Reset</a>
+  <div class="">
+      <button id="submit">
+         	  <span class="icon"><i class="fa fa-check fa-fw"></i></span>
+         	  <span class="text">Submit
+              </span>
+              <span class="spinner">
+                <svg width="50" height="50">
+                  <circle r="23" cx="25" cy="25" />
+                </svg>
+          	 </span>
+    </button>
+    <a id="reset" href="#">Reset</a>
 </div>
 
+<div class="section-one">
+ <div class="login_bar">
+    <input class="login" placeholder="example@gmail.com">
+    <span class="subscribe_button" onclick="subscribeOnClick()">Send</span>
+    <span class="subscribing">Sending...</span>
+    <span class="thanks"> Thank you for the feedback</span>
+  </div>
+</div>
 
-
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-
-
-  
-
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script  src="js/search.js"></script>
     <script  src="js/popup.js"></script>
     <script  src="js/cart.js"></script>
     <script  src="js/submit.js"></script>
-
-
-
-
-
+    <script  src="js/input.js"></script>
 
 </body>
 

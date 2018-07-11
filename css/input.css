@@ -1,0 +1,124 @@
+
+
+.login_bar {
+	width: 300px;
+	height:45px;
+	background-color:#6B90D9;
+	border-radius: 10px;
+	position: relative;
+    z-index: 1;
+	overflow: hidden;
+	
+	
+}
+
+.login {
+	background-color:#6B90D9;
+	color:#fff;
+	position: absolute;
+	height: 103%;
+	width: 202px;
+	padding-left: 10px;
+	text-align: left;
+	line-height: 50px;
+	vertical-align: middle;
+	-webkit-transition: transform 0.2s ease-in-out 0s;
+	   -moz-transition: transform 0.2s ease-in-out 0s;
+	     -o-transition: transform 0.2s ease-in-out 0s;
+	        transition: transform 0.2s ease-in-out 0s;
+}
+
+.login_active {
+	-webkit-transform: translateX(300px);
+	   -moz-transform: translateX(300px);
+	    -ms-transform: translateX(300px);
+	     -o-transform: translateX(300px);
+	        transform: translateX(300px);
+}
+
+.subscribe_button:hover{
+	background-color: #434ACF;
+	cursor:pointer;
+	color:black;
+}
+
+.subscribe_button {
+	background:#434ACF;
+	position: absolute;
+	top: -50px;
+	left: 200px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	height: 150px;
+	width: 100px;
+	text-align: center;
+	line-height: 150px;
+	vertical-align: middle;	
+	color: white;
+	-webkit-transition: transform 0.5s ease 0s;
+	   -moz-transition: transform 0.5s ease 0s;
+	     -o-transition: transform 0.5s ease 0s;
+	        transition: transform 0.5s ease 0s;
+}
+
+.subscribe_button_active{
+	-webkit-transform: translateX(50px);
+	   -moz-transform: translateX(50px);
+	    -ms-transform: translateX(50px);
+	     -o-transform: translateX(50px);
+	        transform: translateX(50px);
+}
+
+.subscribing{
+	background-color:#434ACF;
+	color:#fff;
+	height: 112%;
+	width: 300px;
+	z-index: 5;
+	text-align: left;
+	line-height: 50px;
+	vertical-align: middle;
+	padding-left: 10px;
+	position: absolute;
+	right:-300px;
+	display: inline-block;
+	-webkit-transition: transform 1s ease 0s ;
+	   -moz-transition: transform 1s ease 0s ;
+	     -o-transition: transform 1s ease 0s ;
+	        transition: transform 1s ease 0s ;
+}
+
+.subscribing_active {
+	-webkit-transform: translateX(-300px);
+	   -moz-transform: translateX(-300px);
+	    -ms-transform: translateX(-300px);
+	     -o-transform: translateX(-300px);
+	        transform: translateX(-300px);
+}
+
+.thanks{
+	background-color:#434ACF;
+	color:#fff;
+	height: 112%;
+	width: 300px;
+	z-index: 5;
+	text-align: left;
+	line-height: 50px;
+	vertical-align: middle;
+	padding-left: 10px;
+	position: absolute;
+	left:-350px;
+	display: inline-block;
+	-webkit-transition: transform 1s ease 0s ;
+	   -moz-transition: transform 1s ease 0s ;
+	     -o-transition: transform 1s ease 0s ;
+	        transition: transform 1s ease 0s ;
+}
+
+.thanks_active {
+	-webkit-transform: translateX(350px);
+	   -moz-transform: translateX(350px);
+	    -ms-transform: translateX(350px);
+	     -o-transform: translateX(350px);
+	        transform: translateX(350px);
+}
