@@ -14,7 +14,6 @@ button {
   position: relative;
   overflow: hidden;
   outline: none;
-  margin: 32px auto;
   min-width: 192px;
   text-align: left;
   background-color: #FD8D00;

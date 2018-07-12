@@ -1,8 +1,12 @@
+const shared = getEl('.share');
+const closed = getEl('.close');
+
 $('.toggle').click(function() {
-  $('.share').toggleClass('active');
-  $('.close').toggleClass('active');
+  shared.toggleClass('active');
+  closed.toggleClass('active');
 });
-$('.close').click(function() {
-  $('.close').toggleClass('active');
-  $('.share').toggleClass('active');
+closed.click(function() {
+  closed.toggleClass('active');
+  shared.toggleClass('active');
+
 });
