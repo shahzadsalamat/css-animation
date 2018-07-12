@@ -42,10 +42,18 @@ ul li span {
   cursor: pointer;
   opacity: 0;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	   -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	     -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  
   transform: translateX(-60px) rotate(90deg);
+  
 }
 .close.active {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+	   -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+	     -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
   opacity: 1;
   transform: translateX(0px) rotate(360deg);
 }
@@ -74,6 +82,9 @@ ul li span {
   position: relative;
   background-color:#D8D4D4;
   transition: width 285ms cubic-bezier(0.4, 0, 0.2, 1) 0.2s, height 325ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+   -webkit-transition: width 285ms cubic-bezier(0.4, 0, 0.2, 1) 0.2s, height 325ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	   -moz-transition: width 285ms cubic-bezier(0.4, 0, 0.2, 1) 0.2s, height 325ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	     -o-transition: width 285ms cubic-bezier(0.4, 0, 0.2, 1) 0.2s, height 325ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   text-align: center;
   -webkit-box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.35);
@@ -87,6 +98,9 @@ ul li span {
   width: 350px;
   height: 230px;
   transition: width 285ms cubic-bezier(0.4, 0, 0.2, 1) 0.1s, height 325ms cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+   -webkit-transition:  width 285ms cubic-bezier(0.4, 0, 0.2, 1) 0.1s, height 325ms cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+	  -moz-transition:  width 285ms cubic-bezier(0.4, 0, 0.2, 1) 0.1s, height 325ms cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+	   -o-transition:  width 285ms cubic-bezier(0.4, 0, 0.2, 1) 0.1s, height 325ms cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
   -webkit-box-shadow: 0px 5px 3px 4px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 5px 3px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 5px 3px 4px rgba(0, 0, 0, 0.25);
@@ -97,6 +111,10 @@ ul li span {
   height: 170px;
   transform: scale(1, 1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+  -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+  -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+
 }
 .share.active .content .text {
   transition-delay: 0.6s;
@@ -105,6 +123,10 @@ ul li span {
 }
 .share.active .toggle span {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+
   transform: translateX(-128px);
 }
 .share span {
@@ -114,11 +136,17 @@ ul li span {
   letter-spacing: 1px;
   display: inline-block;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-}
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
+}
 
 .share .content {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   width: 100%;
   height: 0px;
   padding: 10px 30px;
@@ -140,6 +168,9 @@ ul li span {
 }
 .share .content .text .sharelink {
   transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -o-transition: 300ms all;
   margin-top: 12px;
   color: rgba(255, 255, 255, 0.7);
   display: block;
@@ -155,8 +186,11 @@ ul li span {
 .flex {
   min-height: 300px;
   display: flex;
+  -ms-display: flex;
   min-width: 500px;
   align-items: center;
   justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   background-color:#B4D1DC;
 }

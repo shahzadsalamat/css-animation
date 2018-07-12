@@ -9,6 +9,9 @@
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   border-radius: 70px;
 }
 .search:before {
@@ -19,6 +22,11 @@
   position: relative;
   background-color: #00FEDE;
   transition: all 0.5s ease;
+  -webkit-webkit-:all 0.5s ease ;
+  -moz-webkit-:all 0.5s ease ;
+  -ms-webkit-:all 0.5s ease ;
+  -o-webkit-:all 0.5s ease ;
+
 }
 .search.open {
   width: 420px;
@@ -63,6 +71,10 @@
   position: relative;
   margin-left: 5px;
   transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+
 }
 .search-icon:before {
   content: '';
@@ -75,6 +87,10 @@
   background-color: #fff;
   transform: rotate(-45deg);
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+
 }
 .search-icon:after {
   content: '';
@@ -87,10 +103,13 @@
   background-color: #fff;
   transform: rotate(-45deg);
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+
 }
 .open .search-icon {
   margin: 0;
- 
   border-radius: 60px;
 }
 

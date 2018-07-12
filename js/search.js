@@ -1,3 +1,3 @@
-$('.search-button').click(function(){
+$('.search-button').click(function() {
   $(this).parent().toggleClass('open');
 });

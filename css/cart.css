@@ -22,25 +22,25 @@ button {
   transform: translateZ(0);
 }
 
-.btn__swiper {
+.btn-swiper {
   position: absolute;
   top: 0;
   left: -202px;
   fill:#157723;
 }
 
-.btn__icon {
+.btn-icon {
   font-size: 14px;
   color: #FAFAFA;
   margin-right: 12px;
   position: relative;
 }
-.btn__icon .fa {
+.btn-icon .fa {
   text-align: center;
   width: 24px;
 }
 
-.btn__label {
+.btn-label {
   color: #FAFAFA;
   display: inline-block;
   font-size: 16px;
@@ -48,44 +48,56 @@ button {
   font-weight: bold;
 }
 
-.btn:hover .btn__swiper {
+.btn:hover .btn-swiper {
   transform: translateX(56px);
 }
-.btn:hover .btn__label {
+.btn:hover .btn-label {
   transform: translateX(12px);
 }
-.btn:hover .btn__icon {
+.btn:hover .btn-icon {
   color:#23C54F;
 }
 
-.btn__swiper {
+.btn-swiper {
   transition: transform 100ms ease;
+  -webkit-transition: transform 100ms ease;
+	   -moz-transition: transform 100ms ease;
+	     -o-transition: transform 100ms ease;
 }
 
-.btn__icon {
+.btn-icon {
   transition: colour 100ms 50ms ease;
+  -webkit-transition: colour 100ms 50ms ease;
+	   -moz-transition: colour 100ms 50ms ease;
+	     -o-transition: colour 100ms 50ms ease;
 }
 
-.btn__icon .fa {
+.btn-icon .fa {
   transition: transform 4000ms ease;
+  -webkit-transition: transform 4000ms ease;
+	   -moz-transition: transform 4000ms ease;
+	     -o-transition: transform 4000ms ease;
 }
 
-.btn__label {
+.btn-label {
   transition: transform 100ms ease, colour 100ms ease;
+  -webkit-transition: transform 100ms ease, colour 100ms ease;
+	   -moz-transition: transform 100ms ease, colour 100ms ease;
+	     -o-transition: transform 100ms ease, colour 100ms ease;
 }
 
-.btn.loading .btn__swiper,
-.btn.loaded .btn__swiper {
+.btn.loading .btn-swiper,
+.btn.loaded .btn-swiper {
   transform: translateX(202px);
 }
-.btn.loading .btn__label,
-.btn.loading .btn__icon,
-.btn.loaded .btn__label,
-.btn.loaded .btn__icon {
+.btn.loading .btn-label,
+.btn.loading .btn-icon,
+.btn.loaded .btn-label,
+.btn.loaded .btn-icon {
   color: #fff;
 }
-.btn.loading .btn__label,
-.btn.loaded .btn__label {
+.btn.loading .btn-label,
+.btn.loaded .btn-label {
   transform: translateX(0px);
 }
 

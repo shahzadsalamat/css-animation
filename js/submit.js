@@ -3,11 +3,11 @@ var $reset = $('#reset');
 
 $button.on('click', function(e) {
   e.preventDefault();
-  setTimeout(function(){
+  setTimeout(function() {
      $button.addClass('clicked');
   }, 500);
   
-  $button.one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(){
+  $button.one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function() {
         // Do something once!
         $(this).addClass('submited');
   });
