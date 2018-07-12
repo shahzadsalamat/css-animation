@@ -1,5 +1,5 @@
-const shared = getEl('.share');
-const closed = getEl('.close');
+const shared = $('.share');
+const closed = $('.close');
 
 $('.toggle').click(function() {
   shared.toggleClass('active');
